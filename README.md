@@ -6,7 +6,7 @@ The software is a command-line directory scanning tool written in TypeScript. Th
 
 The purpose of writing this software was to gain hands-on experience with TypeScript features such as classes, typed variables, arrays, asynchronous functions, recursion, and exception handling. Building a practical tool like a directory scanner helped reinforce how TypeScript can be used with Node.js to interact with the file system and build useful command-line utilities.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/XiAYc59vz_s)
 
 # Development Environment
 

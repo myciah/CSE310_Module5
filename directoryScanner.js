@@ -39,6 +39,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var fs = require("fs/promises");
 var path = require("path");
 var readline = require("readline");
+// section 1
 // simple structure to store file info
 var FileInfo = /** @class */ (function () {
     function FileInfo(filePath, size) {
@@ -47,6 +48,7 @@ var FileInfo = /** @class */ (function () {
     }
     return FileInfo;
 }());
+// section 2
 // this class scans folders and collects file info
 var DirectoryScanner = /** @class */ (function () {
     function DirectoryScanner() {
@@ -106,6 +108,7 @@ var DirectoryScanner = /** @class */ (function () {
             });
         });
     };
+    // section 3
     DirectoryScanner.prototype.printFiles = function () {
         if (this.files.length === 0) {
             console.log("No files found.");
@@ -118,6 +121,7 @@ var DirectoryScanner = /** @class */ (function () {
         }
         console.log("\nTotal files: ".concat(this.files.length));
     };
+    // section 4
     DirectoryScanner.prototype.getLargestFile = function () {
         if (this.files.length === 0) {
             return null;
@@ -133,6 +137,7 @@ var DirectoryScanner = /** @class */ (function () {
     };
     return DirectoryScanner;
 }());
+//section 5
 // CLI section
 var rl = readline.createInterface({
     input: process.stdin,
@@ -143,6 +148,7 @@ function ask(question) {
         rl.question(question, resolve);
     });
 }
+// section 6
 function main() {
     return __awaiter(this, void 0, void 0, function () {
         var folder, scanner, largest, err_2;
